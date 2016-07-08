@@ -1,4 +1,4 @@
-# android-java8
+# android-java8-r24-3-3
 
 This docker is to build Android Gradle project with Java 8.
 It is available on Docker Hub https://registry.hub.docker.com/u/jacekmarchwicki/android/ .
@@ -29,13 +29,13 @@ docker run --tty --interactive --rm 1b372b1f76f2 /bin/bash
 ## Push build version to repository
 
 ```bash
-docker push jacekmarchwicki/android:java8
+docker push jacekmarchwicki/android:java8-r24-3-3
 ```
 
 ## Usage
 Change directory to your project directory, than run:
 
 ```bash
-docker run --tty --interactive --volume=$(pwd):/opt/workspace --workdir=/opt/workspace --rm jacekmarchwicki/android:java8  /bin/sh -c "./gradlew build"
+docker run --tty --interactive --volume=$(pwd):/opt/workspace --workdir=/opt/workspace --rm jacekmarchwicki/android:java8-r24-3-3  /bin/sh -c "./gradlew build"
 ```
 
